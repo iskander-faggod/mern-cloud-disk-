@@ -1,0 +1,15 @@
+{
+  "name": "cl-disk",
+  "version": "1.0.0",
+  "description": "cloud disk build on mern by iskander",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "iskander-faggod",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
