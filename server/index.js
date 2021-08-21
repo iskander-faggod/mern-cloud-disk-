@@ -6,7 +6,12 @@ const app = express()
 const cookieParser = require('cookie-parser')
 const authRouter = require('./routes/auth.route')
 const PORT = config.get('serverPort');
+const cors = require('cors')
+const corsMiddleware = require('./middlewares/cors.middleware')
 
+
+app.use(cors())
+// app.use(corsMiddleware)
 app.use(express.json())
 app.use('/api/auth', authRouter)
 

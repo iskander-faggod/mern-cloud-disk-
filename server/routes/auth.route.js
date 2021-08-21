@@ -6,7 +6,7 @@ const {check, validationResult} = require('express-validator')
 const router = new Router()
 const jwt = require('jsonwebtoken')
 
-router.post('/registration',
+router.post('/authorization',
     [
         check('email', 'Incorrect email').isEmail(),
         check('password', 'Incorrect password').isLength({min: 3, max: 12}),
